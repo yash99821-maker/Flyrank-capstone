@@ -2,6 +2,7 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from './assets/vite.svg'
 import heroImg from './assets/hero.png'
+import SettingsForm from './components/SettingsForm'
 import './App.css'
 
 function App() {
@@ -28,6 +29,17 @@ function App() {
         >
           Count is {count}
         </button>
+      </section>
+
+      <div className="ticks"></div>
+
+      <section id="settings">
+        <svg className="icon" role="presentation" aria-hidden="true">
+          <use href="/icons.svg#social-icon"></use>
+        </svg>
+        <h2>Settings</h2>
+        <p>Customize your experience</p>
+        <SettingsForm />
       </section>
 
       <div className="ticks"></div>
