@@ -1,29 +1,16 @@
-# Flyrank-capstone
+# React + Vite
 
-Capstone project for the Fly Rank AI-assisted development internship track.
+This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
 
-## About
+Currently, two official plugins are available:
 
-This repo documents my journey building an AI-assisted development capstone project — learning to work with Claude Code / Cursor as part of my workflow.
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
 
-## Status
+## React Compiler
 
-🚧 Work in progress — setup phase.
+The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
 
-## Getting Started
+## Expanding the Oxlint configuration
 
-1. Clone the repository:
-
-   ```bash
-   git clone https://github.com/yash99821-maker/Flyrank-capstone.git
-   cd Flyrank-capstone
-   ```
-
-2. Open the project folder in [Cursor](https://cursor.com/).
-3. See [CLAUDE.MD](./CLAUDE.MD) for stack notes, conventions, and AI assistant guidelines.
-
-## Tools
-
-- Cursor (AI-assisted IDE)
-
-- Git / GitHub for version control
+If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
