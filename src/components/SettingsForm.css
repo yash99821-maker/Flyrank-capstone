@@ -1,0 +1,97 @@
+.settings-form {
+  width: 100%;
+  max-width: 420px;
+  text-align: left;
+}
+
+.settings-form h2 {
+  margin-bottom: 8px;
+}
+
+.settings-form p {
+  margin-bottom: 24px;
+}
+
+.settings-field {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+.settings-field label {
+  color: var(--text-h);
+  font-size: 16px;
+}
+
+.settings-field input[type='text'],
+.settings-field input[type='email'],
+.settings-field select {
+  font: inherit;
+  color: var(--text-h);
+  background: var(--code-bg);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 8px 12px;
+}
+
+.settings-field input:focus-visible,
+.settings-field select:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+.settings-field--checkbox {
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+}
+
+.settings-field--checkbox .settings-error {
+  flex-basis: 100%;
+}
+
+.settings-error {
+  margin: 0;
+  color: #dc2626;
+  font-size: 14px;
+}
+
+.settings-actions {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.settings-button {
+  font: inherit;
+  font-family: var(--mono);
+  font-size: 16px;
+  padding: 8px 16px;
+  border-radius: 5px;
+  color: var(--accent);
+  background: var(--accent-bg);
+  border: 2px solid transparent;
+  cursor: pointer;
+  transition: border-color 0.3s;
+}
+
+.settings-button:hover:not(:disabled) {
+  border-color: var(--accent-border);
+}
+
+.settings-button:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+.settings-button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.settings-button--secondary {
+  color: var(--text-h);
+  background: var(--social-bg);
+}
